@@ -1,0 +1,20 @@
+[package]
+name = "godot-netpacket-macros"
+version = "0.0.1"
+
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+keywords.workspace = true
+repository.workspace = true
+categories.workspace = true
+description.workspace = true
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2", features = ["full"] }
+quote = "1"
+proc-macro2 = "1"
+thiserror = "2"
