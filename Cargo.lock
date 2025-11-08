@@ -100,29 +100,17 @@ dependencies = [
 ]
 
 [[package]]
-name = "godot-netpacket"
-version = "0.0.2"
+name = "godot_netpacket"
+version = "0.0.3"
 dependencies = [
  "godot",
- "godot-netpacket-macros 0.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "godot_netpacket_macros",
  "thiserror",
 ]
 
 [[package]]
-name = "godot-netpacket-macros"
-version = "0.0.1"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn",
- "thiserror",
-]
-
-[[package]]
-name = "godot-netpacket-macros"
-version = "0.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "046b1e4bb683c1da4d45e9585ff0c457e5aceb40c1ce0ea30448ed01dc54352f"
+name = "godot_netpacket_macros"
+version = "0.0.3"
 dependencies = [
  "proc-macro2",
  "quote",

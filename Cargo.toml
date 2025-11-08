@@ -1,9 +1,10 @@
 [workspace]
 resolver = "2"
-members = ["crates/godot-netpacket", "crates/godot-netpacket-macros"]
+members = ["crates/godot_netpacket", "crates/godot_netpacket_macros"]
 
 [workspace.package]
 edition = "2024"
+version = "0.0.3"
 
 authors = ["Olivier Schyns"]
 license = "MIT"

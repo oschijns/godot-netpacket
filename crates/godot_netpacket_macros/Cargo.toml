@@ -1,7 +1,6 @@
 [package]
-name = "godot-netpacket"
-version = "0.0.2"
-
+name = "godot_netpacket_macros"
+version.workspace = true
 authors.workspace = true
 edition.workspace = true
 license.workspace = true
@@ -11,15 +10,10 @@ categories.workspace = true
 description.workspace = true
 
 [lib]
-crate-type = ["cdylib"]
-
-[features]
-
-# Allow this library to be used as a standalone
-standalone = []
-
+proc-macro = true
 
 [dependencies]
-godot = "0.4"
+syn = { version = "2", features = ["full"] }
+quote = "1"
+proc-macro2 = "1"
 thiserror = "2"
-godot-netpacket-macros = "0.0.1"
