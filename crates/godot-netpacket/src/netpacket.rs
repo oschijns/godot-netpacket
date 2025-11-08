@@ -17,6 +17,9 @@ mod other;
 /// Packet traits implementation for transformation types
 mod transform;
 
+/// Packet traits implementation for composite types
+mod composite;
+
 use godot::builtin::*;
 
 /// Size of the data to serialize or deserialize
