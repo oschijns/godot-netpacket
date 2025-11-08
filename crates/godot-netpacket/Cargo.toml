@@ -1,6 +1,6 @@
 [package]
 name = "godot-netpacket"
-version = "0.0.1"
+version = "0.0.2"
 
 authors.workspace = true
 edition.workspace = true
@@ -10,10 +10,16 @@ repository.workspace = true
 categories.workspace = true
 description.workspace = true
 
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+
+# Allow this library to be used as a standalone
+standalone = []
+
+
 [dependencies]
-godot = "0.3"
+godot = "0.4"
 thiserror = "2"
 godot-netpacket-macros = "0.0.1"
-
-[dev-dependencies]
-#gd-rehearse = { git = "https://github.com/StatisMike/gd-rehearse.git" }

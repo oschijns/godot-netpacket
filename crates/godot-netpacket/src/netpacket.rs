@@ -89,7 +89,8 @@ mod tests {
         B { foo: i64, bar: bool },
     }
 
-    //#[gditest]
+    #[doc(hidden)]
+    #[allow(dead_code)]
     fn test_struct() {
         // initial payload
         let a = APacket {
@@ -107,7 +108,8 @@ mod tests {
         assert_eq!(a, a2);
     }
 
-    //#[gditest]
+    #[doc(hidden)]
+    #[allow(dead_code)]
     fn test_simple_enum() {
         // initial payload
         let b = BPacket::B;
@@ -123,7 +125,8 @@ mod tests {
         assert_eq!(b, b2);
     }
 
-    //#[gditest]
+    #[doc(hidden)]
+    #[allow(dead_code)]
     fn test_complex_enum() {
         // initial payload
         let c = CPacket::B {
